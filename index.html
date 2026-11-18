@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ООО Варо Компани</title>
+  <meta name="description" content="Прайс-лист ООО Варо Компани">
+  <meta name="theme-color" content="#0b0b0d">
+
+  <!-- Превью при отправке ссылки в Telegram / соцсети -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ООО Варо Компани">
+  <meta property="og:description" content="Прайс-лист услуг">
+  <meta property="og:image" content="photo_2026-11-18%2016.46.30.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Иконка вкладки: корона -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+
+  <link rel="preload" as="image" href="photo_2026-11-18%2016.46.30.jpeg">
+
+  <style>
+    :root { --img: url("photo_2026-11-18%2016.46.30.jpeg"); }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: #0b0b0d;
+      display: grid;
+      place-items: center;
+      min-height: 100dvh;
+      overflow: hidden;
+    }
+
+    /* Размытый фон из этой же фотографии — заполняет пустые поля по бокам */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -40px;
+      background: var(--img) center / cover no-repeat;
+      filter: blur(40px) brightness(0.45) saturate(1.2);
+      z-index: -1;
+    }
+
+    img {
+      display: block;
+      max-width: 100vw;
+      max-height: 100dvh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      animation: fade-in 0.6s ease-out forwards;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: scale(0.98); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      img { animation: none; opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img
+    src="photo_2026-11-18%2016.46.30.jpeg"
+    width="1034" height="1280"
+    alt="ООО Варо Компани — прайс-лист: выйти на забив 1000 гривен, ответить за базар 500 гривен, выйти на делюгу 200 гривен">
+</body>
+</html>
